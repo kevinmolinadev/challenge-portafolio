@@ -1,0 +1,34 @@
+.contact{
+    --colorText:#2A7AE4;
+    padding: 1rem;
+}
+.contact__title{
+    margin: 0;
+}
+.contact__form{
+    gap: 1rem;
+}
+.form__item{
+    background-color:#ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.form__item:focus-within{
+    border-bottom: 2px solid var(--colorText);
+    gap: 5px;
+}
+.item__label{
+    display: none;
+}
+.item__input,.item__input:focus{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+.item__input:focus-visible  ~ .item__label{
+    display: inline;
+    font-size: 0.8rem;
+    color: var(--colorText);
+}

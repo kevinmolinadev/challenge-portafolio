@@ -1,0 +1,29 @@
+.header{
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+}
+.header__title{
+    font-size: 1rem
+}
+.header__email{
+    width: 10%;
+}
+.email__img{
+    margin-top: 5px;
+    width: 100%;
+}
+.navbar{
+    display: none;
+}
+.navbar__list{
+    list-style: none;
+    padding: 0;
+}
+.list__item{
+    padding: 0.5rem;
+}
+.item__link{
+    color:initial;
+    text-decoration: none;
+}

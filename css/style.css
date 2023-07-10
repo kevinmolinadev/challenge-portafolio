@@ -1,0 +1,31 @@
+@import url(./header.css);
+@import url(./indroduction.css);
+@import url(./about_me.css);
+@import url(./skills.css);
+@import url(./professional_experience.css);
+@import url(./skills.css);
+@import url(./contact.css);
+html{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    font-family: inherit;
+}
+body{
+    background-color: #F5F5F5;
+    margin:0;
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}

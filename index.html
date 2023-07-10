@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>KevinDev</title>
+</head>
+<body>
+    <header class="header flex">
+        <h3 class="header__title">Kevin Molina Lazarte</h3>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="list__item"><a class="item__link" href="index.html#about_me">Sobre mi</a></li>
+                <li class="list__item"><a class="item__link" href="index.html#skills">Skills</a></li>
+                <li class="list__item"><a class="item__link" href="index.html#academic_formation">Formacion</a></li>
+                <li class="list__item"><a class="item__link" href="index.html#professional_experience">Proyectos</a></li>
+            </ul>
+        </nav>
+        <a class="header__email" target="_blank" href="https://mail.google.com/mail/?view=cm&to=kevinmolina.dev%40gmail.com"><img class="email__img" src="https://img.icons8.com/?size=512&id=f0lIW1e5YDAH&format=png" alt="email"></a>
+    </header>
+    <main>
+        <section class="introduction flex-column">
+            <div class="introduction__content flex-column">
+              <h2 class="content__title">Hola, Soy Kevin Molina Lazarte</h2>
+              <p class="content__text">Soy un desarrollador web y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam</p>
+              <div class="content__link flex">
+                <a class="link__item" href="">Github</a>
+                <a class="link__item" href="">Linkedin</a>
+              </div>
+            </div>
+            <div class="introduction__profile ">
+                <img class="profile__img" src="./img/profile.png" alt="profile"> 
+            </div>
+          </section>
+        <section id="about_me" class="about_me">
+            <h2 class="about_me__title">Sobre Mi</h2>
+            <p class="about_me__text">¡Hola! Soy Kevin, un entusiasta y apasionado por el mundo del desarrollo web. <br> Desde que descubrí mi interés por la programación y el diseño web, he estado inmerso en aprender y mejorar mis habilidades en este campo emocionante y en constante evolución. Mi objetivo es convertirme en un profesional altamente capacitado y creativo en el ámbito del desarrollo web.</p>
+        </section>
+        <section id="skills" class="skills flex-column">
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__content flex">
+                <div class="content__item">
+                    <img src="https://img.icons8.com/color/480/html-5--v1.png" alt="html5" class="item__img">
+                    <h3 class="item__title">Html 5</h3>
+                </div>
+                <div class="content__item">
+                    <img src="https://img.icons8.com/fluency/480/css3.png" alt="css3" class="item__img">
+                    <h3 class="item__title">Css</h3>
+                </div>
+                <div class="content__item">
+                    <img src="https://img.icons8.com/fluency/480/javascript.png" alt="javascript" class="item__img">
+                    <h3 class="item__title">Java script</h3>
+                </div>
+                <div class="content__item">
+                    <img src="https://img.icons8.com/color/480/git.png" alt="git" class="item__img">
+                    <h3 class="item__title">Git</h3>
+                </div>
+            </div>
+        </section>
+        <section id="professional_experience" class="professional_experience flex-column">
+            <h2 class="professional_experience__title">Experiencia Profesional</h2>
+            <div class="professional_experience__content flex">
+                <article class="content__article">
+                    <img src="./img/encriptador.png" alt="article_img" class="article__img">
+                    <div class="article__body">
+                        <h3 class="body__title">Encriptador de texto</h3>
+                        <p class="body__description">Proyecto web con el cual puedes encriptar y desencriptar texto</p>
+                        <div class="body__link">
+                            <a href="https://github.com/molinalk/encriptador" target="_blank" class="link__item">Github</a>
+                            <a href="https://molinalk.github.io/encriptador" target="_blank" class="link__item">Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="content__article">
+                    <img src="./img/generador.png" alt="article_img" class="article__img">
+                    <div class="article__body">
+                        <h3 class="body__title">Generador Qr </h3>
+                        <p class="body__description">Proyecto web que genera codigos qr</p>
+                        <div class="body__link">
+                            <a href="https://github.com/molinalk/generador-qr" target="_blank" class="link__item">Github</a>
+                            <a href="https://molinalk.github.io/generador-qr" target="_blank" class="link__item">Proyecto</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="contact__title" >Contacto</h2>
+            <p>¿Quieres contactarme? <br> Complete el formulario y me pondre en contacto con usted lo antes posible</p>
+            <form action="" class="flex-column contact__form">
+                <div class="form__item">
+                    <input class="item__input" type="text" id="name" placeholder="Nombre">
+                    <label class="item__label"  for="name">Nombre</label>
+                </div>
+                <div class="form__item">
+                    <input class="item__input" type="text" id="email" placeholder="E-mail">
+                    <label class="item__label"  for="email">E-mail</label>
+                </div>
+                <div class="form__item">
+                    <input class="item__input" type="text" id="topic" placeholder="Asunto">
+                    <label class="item__label"  for="topic">Asunto</label>
+                </div>
+                <div class="form__item">
+                    <input class="item__input" type="text" id="message" placeholder="Mensaje">
+                    <label class="item__label" for="message">Mensaje</label>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Kevin Molina Lazarte 2023</p>
+    </footer>
+</body>
+</html>
