@@ -1,16 +1,18 @@
-.professional_experience{
+.professional_experience {
     align-items: center;
     background-color: #EAF2FD;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
 
 }
-.professional_experience__content{
+
+.professional_experience__content {
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
     width: 100%;
 }
-.content__article{
+
+.content__article {
     align-items: center;
     background-color: #ffffff;
     border-radius: 1rem;
@@ -21,33 +23,39 @@
     padding: 1rem;
     width: 100%;
 }
-.article__img{
+
+.article__img {
     /* height: clamp(100px, 50%, 300px); */
     width: 100%;
     aspect-ratio: 16/9;
 }
-.article__body{
+
+.article__body {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.body__description{
+
+.body__description {
     margin: 0;
 }
-.body__link{
+
+.body__link {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
 }
-.body__link > .link__item{
+
+.body__link>.link__item {
     background-color: #EAF2FD;
     border-radius: 1rem;
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
 }
-.body__link > .link__item:first-child::after{
+
+.body__link>.link__item:first-child::after {
     background-image: url(https://img.icons8.com/fluency/40/github.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -57,7 +65,8 @@
     margin-left: 5px;
     width: 1.5rem;
 }
-.body__link > .link__item:last-child:after{
+
+.body__link>.link__item:last-child:after {
     background-image: url(https://img.icons8.com/windows/40/internet.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -66,4 +75,42 @@
     height: 1.5rem;
     margin-left: 5px;
     width: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .professional_experience {
+        padding-inline: 6%;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .professional_experience {
+        padding: 2rem 12%;
+    }
+
+    .professional_experience__content {
+        gap: 2rem;
+    }
+
+    .content__article {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .article__img {
+        width: 70%;
+    }
+
+    .article__body {
+        align-items: center;
+        height: 70%;
+    }
+
+    .body__link {
+        flex-grow: 1;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-evenly;
+    }
 }

@@ -1,0 +1,9 @@
+.footer {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.footer__title {
+    margin: 0;
+    padding: 2rem;
+}

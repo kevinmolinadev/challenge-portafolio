@@ -1,34 +1,75 @@
-.contact{
-    --colorText:#2A7AE4;
+.contact {
+    --colorText: #2A7AE4;
     padding: 1rem;
 }
-.contact__title{
+
+.contact__title {
     margin: 0;
 }
-.contact__form{
+
+.contact__form {
     gap: 1rem;
 }
-.form__item{
-    background-color:#ffffff;
+
+.form__item {
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column-reverse;
 }
-.form__item:focus-within{
+
+.form__item:focus-within {
     border-bottom: 2px solid var(--colorText);
     gap: 5px;
 }
-.item__label{
-    display: none;
-}
-.item__input,.item__input:focus{
+
+.item__input,
+.item__input:focus {
     border: none;
-    outline: none;
     font-size: 1rem;
+    outline: none;
+    width: 100%;
 }
-.item__input:focus-visible  ~ .item__label{
-    display: inline;
-    font-size: 0.8rem;
-    color: var(--colorText);
+
+.form__item:nth-child(4)>.item__input {
+    max-height: 20vh;
+    margin: 0;
+    resize: none;
+}
+
+.form__item:nth-child(4)>.item__input::-webkit-scrollbar {
+    width: 0;
+}
+
+.form__btn {
+    align-self: center;
+    background-color: #fdeccb;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        padding-inline: 6%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact {
+        display: flex;
+        gap: 1rem;
+        padding: 2rem 12%;
+    }
+
+    .contact>div {
+        flex-grow: 1;
+    }
+
+    .contact::after {
+        background-image: url(../img/contact.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        content: "";
+        width: 40%;
+    }
 }

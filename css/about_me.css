@@ -1,4 +1,16 @@
-.about_me{
+.about_me {
     background-color: #EAF2FD;
     padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .about_me {
+        padding-inline: 6%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about_me {
+        padding: 2rem 12%;
+    }
 }
