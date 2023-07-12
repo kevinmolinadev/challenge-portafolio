@@ -19,7 +19,28 @@
     box-shadow: 1px 1px 3px #868686;
     padding: 0.5rem 1rem;
 }
-
+.link__item::after{
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 1.5rem;
+    margin-left: 5px;
+    width: 1.5rem;
+}
+.link__item {
+    background-color: #EAF2FD;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.link__item:first-child::after{
+    background-image: url(https://img.icons8.com/fluency/40/github.png);
+}
+.link__item:last-child::after{
+    background-image: url(https://img.icons8.com/ios-filled/40/linkedin.png);
+}
 .profile__img {
     width: 30%;
     border-radius: 50%;

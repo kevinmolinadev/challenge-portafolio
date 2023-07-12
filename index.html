@@ -13,9 +13,10 @@
         <h3 class="header__title">Kevin Molina Lazarte</h3>
         <nav class="header__navbar">
             <ul class="navbar__list flex">
-                <li class="list__item"><a class="item__link" href="index.html#about_me">Sobre mi</a></li>
+                <li class="list__item">
+                    <a class="item__link" href="index.html#about_me">Sobre mi</a>
+                </li>
                 <li class="list__item"><a class="item__link" href="index.html#skills">Skills</a></li>
-                <li class="list__item"><a class="item__link" href="index.html#academic_formation">Formacion</a></li>
                 <li class="list__item"><a class="item__link" href="index.html#professional_experience">Proyectos</a>
                 </li>
                 <li class="list__item"><a class="item__link" href="index.html#contact">Contacto</a>
@@ -29,15 +30,14 @@
         <section class="introduction flex-column">
             <div class="introduction__content flex-column">
                 <h2 class="content__title">Hola, Soy Kevin Molina Lazarte</h2>
-                <p class="content__text">Soy un desarrollador web y actualmente estoy participando en el proyecto Oracle
-                    ONE en Alura Latam</p>
+                <p class="content__text">Apasionado por el desarrollo web y el mundo de la tecnología</p>
                 <div class="content__link flex">
-                    <a class="link__item" href="">Github</a>
-                    <a class="link__item" href="">Linkedin</a>
+                    <a class="link__item" target="_blank" href="https://github.com/molinalk">Github</a>
+                    <a class="link__item" target="_blank" href="https://www.linkedin.com/in/kevin-molina-lazarte">Linkedin</a>
                 </div>
             </div>
             <div class="introduction__profile ">
-                <img class="profile__img" src="./img/profile.png" alt="profile">
+                <img class="profile__img" src="./img/Kevin.png" alt="profile">
             </div>
         </section>
         <section id="about_me" class="about_me">
@@ -103,18 +103,18 @@
             <div>
                 <h2 class="contact__title">Contacto</h2>
                 <p>¿Quieres contactarme? <br> Complete el formulario y me pondre en contacto con usted lo antes posible</p>
-                <form action="" class="flex-column contact__form">
+                <form class="flex-column contact__form">
                     <div class="form__item">
-                        <input class="item__input" type="text" id="name" placeholder="Nombre">
+                        <input class="item__input" type="text" name="name" id="name" placeholder="Nombre" required>
                     </div>
                     <div class="form__item">
-                        <input class="item__input" type="text" id="email" placeholder="E-mail">
+                        <input class="item__input" type="email" name="email" id="email" placeholder="E-mail" required>
                     </div>
                     <div class="form__item">
-                        <input class="item__input" type="text" id="topic" placeholder="Asunto">
+                        <input class="item__input" type="text" name="topic" id="topic" placeholder="Asunto" required>
                     </div>
                     <div class="form__item">
-                        <textarea class="item__input" name="message" id="message" placeholder="Mensaje"></textarea>
+                        <textarea class="item__input" name="message" id="message" placeholder="Mensaje" required></textarea>
                     </div>
                     <input class="form__btn" type="submit">
                 </form>
@@ -124,6 +124,6 @@
     <footer class="footer">
         <p class="footer__title">Desarrollado por Kevin Molina Lazarte 2023</p>
     </footer>
+    <script src="./js/contact.js"></script>
 </body>
-
 </html>

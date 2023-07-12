@@ -27,12 +27,11 @@
 }
 
 .item__link {
-    color: initial;
     text-decoration: none;
 }
 
-.header__email:hover {
-    transform: scale(1.2);
+.item__link:hover {
+    color: #75afff;
 }
 
 @media (min-width: 768px) {
@@ -55,6 +54,6 @@
     }
 
     .header__navbar {
-        display: inline;
+        display: inline-block;
     }
 }

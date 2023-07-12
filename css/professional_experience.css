@@ -26,8 +26,9 @@
 
 .article__img {
     /* height: clamp(100px, 50%, 300px); */
-    width: 100%;
     aspect-ratio: 16/9;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .article__body {
@@ -47,34 +48,12 @@
     text-align: center;
 }
 
-.body__link>.link__item {
-    background-color: #EAF2FD;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem;
-}
-
-.body__link>.link__item:first-child::after {
+.body__link > .link__item:first-child::after {
     background-image: url(https://img.icons8.com/fluency/40/github.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    height: 1.5rem;
-    margin-left: 5px;
-    width: 1.5rem;
 }
 
-.body__link>.link__item:last-child:after {
+.body__link > .link__item:last-child:after {
     background-image: url(https://img.icons8.com/windows/40/internet.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    content: "";
-    display: inline-block;
-    height: 1.5rem;
-    margin-left: 5px;
-    width: 1.5rem;
 }
 
 @media (min-width: 768px) {

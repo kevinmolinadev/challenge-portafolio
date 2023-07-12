@@ -45,6 +45,12 @@
     background-color: #fdeccb;
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
+    transition: transform 0.5s;
+
+}
+.form__btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 @media (min-width: 768px) {

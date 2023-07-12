@@ -8,10 +8,9 @@
 
 html {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:monospace;
     scroll-behavior: smooth;
 }
-
 *,
 *::after,
 *::before {
@@ -37,6 +36,10 @@ h6 {
 a {
     color: initial;
     text-decoration: none;
+    transition: transform 0.5s;
+}
+a:hover{
+    transform: scale(1.1);
 }
 
 .flex {
